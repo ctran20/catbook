@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Navigation = () => {
-  const navStyle = 'f3 link dim white pa2 pointer';
+  const navStyle = 'f3 link dim black pa2 pointer';
 
   return (
     <nav style={{ display: 'flex' }}>

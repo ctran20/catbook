@@ -1,0 +1,14 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center_v {
+  display: flex;
+  align-items: center;
+}
+
+.horizontally {
+  display: flex;
+}
