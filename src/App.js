@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
+import Profile from './components/Profile/Profile';
 import './App.css';
 import 'tachyons';
 
@@ -11,10 +12,11 @@ function App() {
         <Logo />
         <Navigation />
       </div>
+      <div className="ma4">
+        <Profile />
+      </div>
 
       {/*
-    <Logo/>
-    <Profile/>
     <Posts/>
       */}
     </div>
