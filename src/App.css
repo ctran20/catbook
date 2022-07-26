@@ -12,3 +12,8 @@
 .horizontally {
   display: flex;
 }
+
+.main_body {
+  display: flex;
+  justify-content: center;
+}

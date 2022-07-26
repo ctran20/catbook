@@ -6,11 +6,11 @@ const Profile = () => {
 
   //Remove shadow-2 when done
   return (
-    <div className="horizontally shadow-2 flex justify-center">
-      <div className="pa4 mh3 shadow-2">
+    <div className="shadow-2">
+      <div className="pa4">
         <img alt="profile" src={profileUrl} width="300px" height="auto" />
       </div>
-      <div className="ph3 mh3 shadow-2">
+      <div className="ph3 mh3">
         <h2>{'Tux Jr'}</h2>
         <p>{'Product Manager at Tuxoreosis'}</p>
         <p>{'Lives in Binhamton, NY'}</p>

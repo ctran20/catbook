@@ -6,13 +6,13 @@ const Logo = () => {
   return (
     <div className="ma4 mt0">
       <Tilty
-        className="br2 shadow-2 Tilt"
+        className="br3 shadow-2"
         scale={1.2}
         perspective={500}
         reset={true}
-        style={{ height: 100, width: 100 }}
+        style={{ height: 50, width: 50 }}
       >
-        <div className="center f-headline lh-solid white fw7">C</div>
+        <div className="center f1 lh-title lh-solid white fw7">C</div>
       </Tilty>
     </div>
   );
