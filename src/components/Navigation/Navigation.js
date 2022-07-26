@@ -5,7 +5,7 @@ const Navigation = () => {
   const navStyle = 'nav_text link dim pointer';
 
   return (
-    <nav className="flex bg-blue dib br--bottom mb4 ">
+    <nav className="flex bg-blue dib shadow-1 ">
       <Logo />
       <p className={navStyle}>Home</p>
       <p className={navStyle}>Profile</p>

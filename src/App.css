@@ -13,6 +13,16 @@
   display: flex;
 }
 
+.profile_body {
+  flex-direction: column;
+  max-width: 1300px;
+}
+
+.top_body {
+  display: flex;
+  flex-direction: column;
+}
+
 .main_body {
   display: flex;
   justify-content: center;

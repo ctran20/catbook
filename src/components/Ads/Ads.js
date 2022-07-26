@@ -1,7 +1,7 @@
 import React from 'react';
 
-const PostList = () => {
+const Ads = () => {
   return <div>Ads</div>;
 };
 
-export default PostList;
+export default Ads;
