@@ -4,15 +4,15 @@ import './Logo.css';
 
 const Logo = () => {
   return (
-    <div className="ma4 mt0">
+    <div className="ma2">
       <Tilty
-        className="br3 shadow-2"
+        className="br2 shadow-2 Tilt"
         scale={1.2}
         perspective={500}
         reset={true}
-        style={{ height: 50, width: 50 }}
+        style={{ height: 42, width: 42 }}
       >
-        <div className="center f1 lh-title lh-solid white fw7">C</div>
+        <div className="center pl1 blue logo_char">C</div>
       </Tilty>
     </div>
   );

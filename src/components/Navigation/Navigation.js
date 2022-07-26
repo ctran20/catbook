@@ -1,11 +1,11 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
-
+import './Navigation.style.css';
 const Navigation = () => {
-  const navStyle = 'f3 link dim black pa2 pt0 pointer';
+  const navStyle = 'nav_text link dim pointer';
 
   return (
-    <nav className="flex bg-light-blue dib br--bottom br4 mb4 pa3">
+    <nav className="flex bg-blue dib br--bottom mb4 ">
       <Logo />
       <p className={navStyle}>Home</p>
       <p className={navStyle}>Profile</p>

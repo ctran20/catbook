@@ -1,4 +1,9 @@
 .Tilt {
-  background: linear-gradient(#c9f4ff, #4fff72);
+  background: white;
   background-attachment: fixed;
+}
+
+.logo_char {
+  font-weight: bold;
+  font-size: 45px;
 }
