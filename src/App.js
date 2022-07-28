@@ -14,7 +14,7 @@ function App() {
     'https://i.pinimg.com/originals/72/e6/d6/72e6d6809356a48d1d6f65d79216eb7e.jpg';
   // REMOVE ALL SHADOWS FROM COMPONENTS
   return (
-    <div className="shadow-2">
+    <div>
       <Navigation />
       <div className="center">
         <div className="profile_body">
@@ -29,6 +29,17 @@ function App() {
               justifyContent: 'flex-end',
             }}
           >
+            <div
+              className="center bg-yellow f1 lh-title white"
+              style={{
+                position: 'sticky',
+                top: 0,
+                height: '50px',
+                width: '100%',
+              }}
+            >
+              WORK IN PROGRESS
+            </div>
             <ProfileNav />
           </div>
 
