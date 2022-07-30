@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Navigation from './components/Navigation/Navigation';
-import Profile from './components/Profile/Profile';
+import Bio from './components/Profile/Bio';
+import ProfileNav from './components/Profile/ProfileNav';
 import PostList from './components/PostList/PostList';
 import Ads from './components/Ads/Ads';
 import Contacts from './components/Contacts/Contacts';
 import './App.css';
 import 'tachyons';
-import ProfileNav from './components/Profile/ProfileNav';
 
 function App() {
   //<img alt="profile" src={profileUrl} width="100%" height="auto" />
@@ -29,31 +29,17 @@ function App() {
               justifyContent: 'flex-end',
             }}
           >
-            <div
-              className="center bg-yellow f1 lh-title white"
-              style={{
-                position: 'sticky',
-                top: 0,
-                height: '50px',
-                width: '100%',
-              }}
-            >
-              WORK IN PROGRESS
-            </div>
             <ProfileNav />
           </div>
 
           <div className="main_body">
-            <div>
-              <Profile />
-            </div>
-            <div>
-              <PostList />
-            </div>
-
-            <div>
+            <div className="left_sidebar">
+              <Bio />
               <Ads />
               <Contacts />
+            </div>
+            <div className="posts">
+              <PostList />
             </div>
           </div>
         </div>

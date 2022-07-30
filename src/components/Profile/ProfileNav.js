@@ -8,6 +8,16 @@ const ProfileNav = () => {
 
   return (
     <div>
+      <div
+        className="f2 fw4 white"
+        style={{
+          position: 'relative',
+          top: '280px',
+          left: '290px',
+        }}
+      >
+        <p>Tuxedo Tran</p>
+      </div>
       <img
         className="br-100 ba bw2 b--white ml3"
         alt="profile_pic"
@@ -16,11 +26,11 @@ const ProfileNav = () => {
         height="250px"
         style={{
           position: 'relative',
-          top: '50px',
+          top: '40px',
         }}
       />
 
-      <div className="bg-white flex ba b--light-silver">
+      <div className="bg-white flex ba br2 br--bottom bt0 b--light-silver">
         <div className="profile_pic_space"></div>
         <nav className="flex dib">
           <div className={navStyle}>Home</div>

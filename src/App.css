@@ -15,7 +15,7 @@
 
 .profile_body {
   flex-direction: column;
-  max-width: 1300px;
+  min-width: 1100px;
 }
 
 .top_body {
@@ -25,5 +25,12 @@
 
 .main_body {
   display: flex;
-  justify-content: center;
+}
+
+.left_sidebar {
+  flex-grow: 1;
+}
+
+.posts {
+  flex-grow: 3;
 }

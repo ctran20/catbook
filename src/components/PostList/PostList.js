@@ -3,7 +3,7 @@ import Post from '../Post/Post';
 
 const PostList = () => {
   return (
-    <div className="center flex flex-column">
+    <div className="pl3 flex flex-column">
       <Post />
       <Post />
       <Post />
