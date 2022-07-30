@@ -28,9 +28,9 @@
 }
 
 .left_sidebar {
-  flex-grow: 1;
+  width: 40%;
 }
 
 .posts {
-  flex-grow: 3;
+  width: 60%;
 }
