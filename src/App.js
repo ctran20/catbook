@@ -4,9 +4,10 @@ import Bio from './components/Profile/Bio';
 import ProfileNav from './components/Profile/ProfileNav';
 import PostList from './components/PostList/PostList';
 import Ads from './components/Ads/Ads';
-import Contacts from './components/Contacts/Contacts';
+import Photos from './components/Photos/Photos';
 import './App.css';
 import 'tachyons';
+import Friends from './components/Friends/Friends';
 
 function App() {
   //<img alt="profile" src={profileUrl} width="100%" height="auto" />
@@ -35,8 +36,9 @@ function App() {
           <div className="main_body">
             <div className="left_sidebar">
               <Bio />
+              <Friends />
+              <Photos />
               <Ads />
-              <Contacts />
             </div>
             <div className="posts">
               <PostList />
