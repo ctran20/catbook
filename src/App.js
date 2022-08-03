@@ -20,7 +20,7 @@ function App() {
       <div className="center">
         <div className="profile_body">
           <div
-            className="top_body mb4"
+            className="top_body mb4 br4 br--bottom"
             style={{
               backgroundImage: `url(${profileUrl})`,
               backgroundRepeat: 'no-repeat',

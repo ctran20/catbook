@@ -30,7 +30,7 @@ const ProfileNav = () => {
         }}
       />
 
-      <div className="bg-white flex ba br2 br--bottom bt0 b--light-silver">
+      <div className="bg-white flex ba br3 br--bottom bt0 b--light-silver">
         <div className="profile_pic_space"></div>
         <nav className="flex dib">
           <div className={navStyle}>Home</div>

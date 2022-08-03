@@ -7,7 +7,7 @@ const Friends = () => {
   return (
     <div className="ba b--light-silver shadow-4 br2 bg-white mb3 pa3 pb2">
       <div className="b f4">Friends</div>
-      <div className="pb3">1,152 (5 mutal)</div>
+      <div className="pb3">1,152 friends</div>
       <div className="flex flex-wrap">
         <div className="mb3 mr2" style={{ width: '31%' }}>
           <img
