@@ -1,3 +1,20 @@
 .profile_pic_space {
   width: 300px;
 }
+
+.profile_header {
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cover_image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  aspect-ratio: 2/1;
+}

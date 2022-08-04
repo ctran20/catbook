@@ -1,10 +1,8 @@
 import React from 'react';
 import './Profile.style.css';
 
-const ProfileNav = () => {
+const ProfileNav = ({ name, profileUrl }) => {
   const navStyle = 'pa3 ba b--light-gray b blue link dim pointer';
-  const profileUrl =
-    'https://www.thesprucepets.com/thmb/EAU60oC1d_bm-81ErOgM760RjGs=/434x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/35616731_1598735883572052_5494475739635908608_n-5b45332ec9e77c0037110989.jpg';
 
   return (
     <div>
@@ -16,7 +14,7 @@ const ProfileNav = () => {
           left: '290px',
         }}
       >
-        <p>Tuxedo Tran</p>
+        <p>{name}</p>
       </div>
       <img
         className="br-100 ba bw2 b--white ml3"
@@ -25,6 +23,7 @@ const ProfileNav = () => {
         width="250px"
         height="250px"
         style={{
+          objectFit: 'cover',
           position: 'relative',
           top: '40px',
         }}
