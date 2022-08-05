@@ -16,6 +16,75 @@
 
 .post-user-image {
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.post-display-name {
+  color: #357edd;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.post-display-name--comment {
+  font-size: 0.875rem;
+}
+
+.post-date {
+  color: gray;
+  font-size: 0.875rem;
+  margin-left: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.post-content {
+  margin: 0.5em 1em 0.5em 1em;
+}
+
+.post-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.line-break {
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 1px;
+  background-color: #cccccc;
+  border: none;
+}
+
+.hcs-buttons {
+  width: 33%;
+  height: 95%;
+  display: flex;
+  font-weight: 500;
+  color: gray;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25em;
+  transition: background-color 0.15s ease-in;
+}
+
+.hcs-buttons:hover {
+  cursor: pointer;
+  background-color: #f4f4f4;
+  transition: background-color 0.15s ease-in;
+}
+
+.hcs-buttons-container {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
