@@ -12,19 +12,19 @@ const Bio = () => {
     <div className="ba b--light-silver shadow-4 br2 bg-white mb3 pa3">
       <div className="b f4">Intro</div>
       <p>
-        <BiBriefcase className="pr2" />
+        <BiBriefcase className="mr2" />
         {'Product Manager at Tuxoreosis'}
       </p>
       <p>
-        <BiBuildingHouse className="pr2" />
+        <BiBuildingHouse className="mr2" />
         {'Lives in Binhamton, NY'}
       </p>
       <p>
-        <BiHeart className="pr2" />
+        <BiHeart className="mr2" />
         {'In relationship with Next Door Cat'}
       </p>
       <p>
-        <BiBookBookmark className="pr2" />
+        <BiBookBookmark className="mr2" />
         {'Studied at Top Cat University'}
       </p>
     </div>
