@@ -11,16 +11,8 @@ const Photos = () => {
   const sampleUrl4 =
     'https://cdn.theatlantic.com/thumbor/yHhIvkBiGvKKubxVHTNXvU4nCKQ=/1x122:2554x1452/1200x625/media/img/mt/2017/06/shutterstock_319985324/original.jpg';
 
-  const photos = [
-    sampleUrl,
-    sampleUrl2,
-    sampleUrl3,
-    sampleUrl4,
-    sampleUrl,
-    sampleUrl2,
-    sampleUrl3,
-    sampleUrl4,
-  ];
+  // Slice it to 9
+  const photos = [sampleUrl, sampleUrl2, sampleUrl3, sampleUrl4];
 
   return (
     <div className="sidebox">

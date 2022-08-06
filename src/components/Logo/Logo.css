@@ -1,9 +1,5 @@
-.Tilt {
-  background: white;
-  background-attachment: fixed;
-}
-
-.logo_char {
-  font-weight: bold;
-  font-size: 45px;
+.logo {
+  font-family: 'Ruda';
+  font-size: 1.7rem;
+  font-weight: 900;
 }

@@ -58,3 +58,7 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+.comment-date {
+  margin-left: 0.875rem;
+}

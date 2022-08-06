@@ -2,12 +2,13 @@ import React from 'react';
 import './Profile.style.css';
 
 const ProfileNav = ({ name, profileUrl }) => {
-  const navStyle = 'pa3 ba b--light-gray b blue link dim pointer';
+  const navStyle =
+    'nav_text pa3 ba b--light-gray b temp-profile-nav-text mid-gray link dim pointer';
 
   return (
     <div>
       <div
-        className="f2 fw4 white"
+        className="f2 fw4 white nav_text"
         style={{
           position: 'relative',
           top: '280px',

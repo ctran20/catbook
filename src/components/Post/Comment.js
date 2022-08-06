@@ -19,7 +19,7 @@ const Comment = ({ comment }) => {
         <div className="comment-meows">😺 {meows}</div>
         <div className="comment-tail">
           <div className="meows-button">Meows</div>
-          <div className="post-date">{commentDate}</div>
+          <div className="post-date">45m</div>
         </div>
       </div>
     </div>

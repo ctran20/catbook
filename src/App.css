@@ -27,6 +27,11 @@
   width: 40%;
 }
 
+.left-slidebar {
+  top: -2rem;
+  position: sticky;
+}
+
 .posts {
   width: 60%;
 }

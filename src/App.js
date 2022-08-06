@@ -21,10 +21,12 @@ const App = () => {
           <ProfileHeader userInfo={user} />
           <div className="main_body">
             <div className="left_sidebar">
-              <Bio />
-              <Friends />
-              <Photos />
-              <Ads />
+              <div className="left-slidebar">
+                <Bio />
+                <Friends />
+                <Photos />
+                <Ads />
+              </div>
             </div>
             <div className="posts">
               <PostList />

@@ -8,12 +8,10 @@ const Ads = () => {
 
   return (
     <div>
-      <div className="br2 bg-white ba b--light-silver mb2 pa3 b f4">
-        Sponsored
-      </div>
+      <div className="sidebox sidebox-title">Sponsored</div>
       <div className="mr2 flex" style={{ width: '100%' }}>
         <div
-          className="ba pa1 br3 ma1 b--light-silver bg-white center_v"
+          className="ba pa1 br4 ma1 b--light-silver bg-white center_v"
           style={{ width: '48%' }}
         >
           <div className="f5 b mt2 blue">Catnip Litter</div>
@@ -33,7 +31,7 @@ const Ads = () => {
         </div>
 
         <div
-          className="ba pa1 br3 ma1 b--light-silver bg-white center_v"
+          className="ba pa1 br4 ma1 b--light-silver bg-white center_v"
           style={{ width: '48%' }}
         >
           <div className="f5 b mt2 blue">Sexy Cats Perfume</div>
