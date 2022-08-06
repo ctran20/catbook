@@ -1,13 +1,13 @@
 .nav_text {
   font-family: 'Ruda';
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #25cf28;
+  background-color: white;
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -26,8 +26,29 @@
 }
 
 .main-nav-button {
-  padding: 0.5rem;
-  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: #eaeaea;
+}
+
+.main-nav-button.sign-in {
+  width: auto;
+  border-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.main-nav-button:hover {
+  cursor: pointer;
+  background-color: #dddddd;
 }
 
 .search-bar {
@@ -44,7 +65,7 @@
   width: 32rem;
   padding-left: 1em;
   border-style: none;
-  background-color: white;
+  background-color: #f1f1f1;
 }
 
 .search-box:focus {
@@ -52,7 +73,7 @@
 }
 
 .search-button {
-  width: 4rem;
+  width: 3rem;
   border-style: none;
   background-color: #f1f1f1;
 }

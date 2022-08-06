@@ -89,8 +89,8 @@ const PostList = () => {
 
   return (
     <div className="pl3 flex flex-column">
-      {posts.map((post) => {
-        return <Post postInfo={post} />;
+      {posts.map((post, index) => {
+        return <Post key={index} postInfo={post} />;
       })}
     </div>
   );

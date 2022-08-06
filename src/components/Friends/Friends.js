@@ -30,8 +30,8 @@ const Friends = () => {
         {friend_count.toLocaleString('en-US')} friends
       </div>
       <div className="friends-container">
-        {friends.map((friend) => {
-          return <Friend friendInfo={friend} />;
+        {friends.map((friend, index) => {
+          return <Friend key={index} friendInfo={friend} />;
         })}
       </div>
     </div>

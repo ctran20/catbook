@@ -60,8 +60,8 @@ const Post = ({ postInfo }) => {
       <div className="line-break" />
 
       <div className="comment-section">
-        {comments.map((comment) => {
-          return <Comment comment={comment} />;
+        {comments.map((comment, index) => {
+          return <Comment key={index} comment={comment} />;
         })}
       </div>
     </div>

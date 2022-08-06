@@ -19,7 +19,7 @@ const Photos = () => {
       <div className="sidebox-title">Photos</div>
       <div className="photos-container">
         {photos.map((photo, index) => {
-          return <Photo photoUrl={photo} index={index} />;
+          return <Photo key={index} photoUrl={photo} index={index} />;
         })}
       </div>
     </div>
