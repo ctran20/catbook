@@ -1,4 +1,5 @@
 import React from 'react';
+import Comment from './Comment';
 import './Post.style.css';
 import { IoMdGlobe } from 'react-icons/io';
 
@@ -8,8 +9,7 @@ const Post = () => {
   const profileUrl =
     'https://www.thesprucepets.com/thmb/EAU60oC1d_bm-81ErOgM760RjGs=/434x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/35616731_1598735883572052_5494475739635908608_n-5b45332ec9e77c0037110989.jpg';
 
-  const date = new Date();
-  const tempDate = Date(new Date()).slice(3, 10) + ' ·';
+  const tempDate = Date(new Date()).slice(3, 10);
 
   const postInfo = {
     displayName: 'Tuxedo Tran',
@@ -25,9 +25,17 @@ const Post = () => {
       {
         displayName: 'Tuxedo Tran',
         profileImage: profileUrl,
+        meows: 12,
         commentDate: tempDate,
         commentContent:
-          'Meow!! Meow meow, meow meow meow? Meow meow, meow meow meow.',
+          'Meow!! Meow meow, meow meow meow? Meow meow, meow meow meow. ',
+      },
+      {
+        displayName: 'Tuxedo Tran',
+        profileImage: profileUrl,
+        meows: 1,
+        commentDate: tempDate,
+        commentContent: 'Meow!! 😹😹😹',
       },
     ],
   };
@@ -48,7 +56,8 @@ const Post = () => {
         <div>
           <div className="post-display-name">{displayName}</div>
           <div className="post-date">
-            {postDate} <IoMdGlobe style={{ marginLeft: '0.25em' }} />
+            {`${postDate} ·`}
+            <IoMdGlobe style={{ marginLeft: '0.25em', fontSize: '0.85rem' }} />
           </div>
         </div>
       </div>
@@ -57,38 +66,26 @@ const Post = () => {
       <img alt="post_img" width="100%" height="auto" src={imgUrl} />
 
       <div className="post-stats">
-        <div>😻 {postStats.hearts}</div>
-        <div>
-          {postStats.comments} Comments {postStats.shares} Shares
+        <div>😺 {postStats.hearts}</div>
+        <div style={{ fontSize: '0.875rem' }}>
+          {`${postStats.comments} Comments \u00a0${postStats.shares} Shares`}
         </div>
       </div>
 
-      <hr className="line-break" />
+      <div className="line-break" />
 
-      <div className="hcs-buttons-container">
-        <div className="hcs-buttons">😻 Meow</div>
-        <div className="hcs-buttons">💬 Comment</div>
-        <div className="hcs-buttons">📣 Share</div>
+      <div className="mcs-buttons-container">
+        <div className="mcs-buttons">😺 Meow</div>
+        <div className="mcs-buttons">💬 Comment</div>
+        <div className="mcs-buttons">📣 Share</div>
       </div>
 
-      <hr className="line-break" />
+      <div className="line-break" />
 
-      <div className="bt b--light-silver mv3" />
-
-      <div className="flex ph3 mb3">
-        <img
-          className="ba b--gray br-100"
-          alt="post_img"
-          src={profileUrl}
-          width="40px"
-          height="40px"
-        />
-        <div className="ml2 pa2 br3 bg-light-gray">
-          <div className="blue f6 b">Tuxedo Tran</div>
-          <div className="gray f6 ">
-            Meow!! Meow meow, meow meow meow? Meow meow, meow meow meow.
-          </div>
-        </div>
+      <div className="comment-section">
+        {comments.map((comment) => {
+          return <Comment comment={comment} />;
+        })}
       </div>
     </div>
   );

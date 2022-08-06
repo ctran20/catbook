@@ -9,7 +9,7 @@ import {
 const Bio = () => {
   //Remove shadow-2 when done
   return (
-    <div className="ba b--light-silver shadow-4 br2 bg-white mb3 pa3">
+    <div className="bio">
       <div className="b f4">Intro</div>
       <p>
         <BiBriefcase className="mr2" />
