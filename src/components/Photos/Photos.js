@@ -1,4 +1,5 @@
 import React from 'react';
+import Photo from './Photo';
 import './Photos.style.css';
 
 const Photos = () => {
@@ -7,43 +8,27 @@ const Photos = () => {
   const sampleUrl2 = 'https://i.ytimg.com/vi/1Ne1hqOXKKI/maxresdefault.jpg';
   const sampleUrl3 =
     'https://media.vanityfair.com/photos/5e27310def889c00087c7928/master/pass/taylor-swift-cats.jpg';
+  const sampleUrl4 =
+    'https://cdn.theatlantic.com/thumbor/yHhIvkBiGvKKubxVHTNXvU4nCKQ=/1x122:2554x1452/1200x625/media/img/mt/2017/06/shutterstock_319985324/original.jpg';
+
+  const photos = [
+    sampleUrl,
+    sampleUrl2,
+    sampleUrl3,
+    sampleUrl4,
+    sampleUrl,
+    sampleUrl2,
+    sampleUrl3,
+    sampleUrl4,
+  ];
 
   return (
     <div className="sidebox">
       <div className="sidebox-title">Photos</div>
       <div className="photos-container">
-        <div className="mb1" style={{ width: '32%' }}>
-          <img
-            alt="friend_pic"
-            src={sampleUrl}
-            width="100%"
-            style={{ objectFit: 'cover', aspectRatio: '1/1' }}
-          />
-        </div>
-        <div className="mb1 ml2 mr2" style={{ width: '32%' }}>
-          <img
-            alt="friend_pic"
-            src={sampleUrl2}
-            width="100%"
-            style={{ objectFit: 'cover', aspectRatio: '1/1' }}
-          />
-        </div>
-        <div className="mb1" style={{ width: '32%' }}>
-          <img
-            alt="friend_pic"
-            src={sampleUrl3}
-            width="100%"
-            style={{ objectFit: 'cover', aspectRatio: '1/1' }}
-          />
-        </div>
-        <div className="mb2" style={{ width: '32%' }}>
-          <img
-            alt="friend_pic"
-            src={sampleUrl3}
-            width="100%"
-            style={{ objectFit: 'cover', aspectRatio: '1/1' }}
-          />
-        </div>
+        {photos.map((photo, index) => {
+          return <Photo photoUrl={photo} index={index} />;
+        })}
       </div>
     </div>
   );
