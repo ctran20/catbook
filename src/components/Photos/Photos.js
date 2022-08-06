@@ -1,4 +1,5 @@
 import React from 'react';
+import './Photos.style.css';
 
 const Photos = () => {
   const sampleUrl =
@@ -8,12 +9,9 @@ const Photos = () => {
     'https://media.vanityfair.com/photos/5e27310def889c00087c7928/master/pass/taylor-swift-cats.jpg';
 
   return (
-    <div className="ba b--light-silver shadow-4 br2 bg-white mb3 pa3 pb2">
-      <div className="b f4 pb3">Photos</div>
-      <div
-        className="flex flex-wrap br3 b--clear"
-        style={{ overflow: 'hidden' }}
-      >
+    <div className="sidebox">
+      <div className="sidebox-title">Photos</div>
+      <div className="photos-container">
         <div className="mb1" style={{ width: '32%' }}>
           <img
             alt="friend_pic"
@@ -41,7 +39,7 @@ const Photos = () => {
         <div className="mb2" style={{ width: '32%' }}>
           <img
             alt="friend_pic"
-            src={sampleUrl2}
+            src={sampleUrl3}
             width="100%"
             style={{ objectFit: 'cover', aspectRatio: '1/1' }}
           />

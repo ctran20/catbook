@@ -1,0 +1,28 @@
+.friends-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.friend-count {
+  color: #555555;
+}
+
+.friend {
+  margin-bottom: 1.25rem;
+  margin-right: 0.65rem;
+  width: 31%;
+}
+
+.friend-profile-image {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.friend-display-name {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #555555;
+}

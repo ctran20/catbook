@@ -7,25 +7,44 @@ import {
 } from 'react-icons/bi';
 
 const Bio = () => {
-  //Remove shadow-2 when done
+  const userBio = {
+    workPosition: 'Product Manager',
+    workplace: 'Tuxoreosis',
+    city: 'Binghamton',
+    state: 'NY',
+    relationship: 'dating',
+    partner: 'Cat Next Door',
+    school: 'Top Cat University',
+  };
+
+  const {
+    workPosition,
+    workplace,
+    city,
+    state,
+    relationship,
+    partner,
+    school,
+  } = userBio;
+
   return (
-    <div className="bio">
-      <div className="b f4">Intro</div>
+    <div className="sidebox">
+      <div className="sidebox-title">Intro</div>
       <p>
-        <BiBriefcase className="mr2" />
-        {'Product Manager at Tuxoreosis'}
+        <BiBriefcase className="bio-icon" />
+        {workPosition} at {workplace}
       </p>
       <p>
-        <BiBuildingHouse className="mr2" />
-        {'Lives in Binhamton, NY'}
+        <BiBuildingHouse className="bio-icon" />
+        Lives in {city}, {state}
       </p>
       <p>
-        <BiHeart className="mr2" />
-        {'In relationship with Next Door Cat'}
+        <BiHeart className="bio-icon" />
+        In relationship with {partner}
       </p>
       <p>
-        <BiBookBookmark className="mr2" />
-        {'Studied at Top Cat University'}
+        <BiBookBookmark className="bio-icon" />
+        Studied at {school}
       </p>
     </div>
   );

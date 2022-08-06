@@ -30,3 +30,20 @@
 .posts {
   width: 60%;
 }
+
+.sidebox {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.sidebox-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
